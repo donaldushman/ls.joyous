@@ -10,7 +10,7 @@ from django.test import RequestFactory
 from django.utils import translation
 from django.urls import reverse
 from wagtail.admin.edit_handlers import get_form_for_model
-from wagtail.core.models import Site, Page
+from wagtail.models import Site, Page
 from ls.joyous.models import (CalendarPage, SpecificCalendarPage,
         CalendarPageForm, GeneralCalendarPage)
 from ls.joyous.models import SimpleEventPage

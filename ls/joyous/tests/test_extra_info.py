@@ -7,7 +7,7 @@ from django.test import TestCase
 from django.contrib.auth.models import User
 from django.utils import translation
 from django.utils import timezone
-from wagtail.core.models import Page
+from wagtail.models import Page
 from wagtail.tests.utils.form_data import nested_form_data, rich_text
 from ls.joyous.models import CalendarPage
 from ls.joyous.models import RecurringEventPage, MultidayRecurringEventPage
