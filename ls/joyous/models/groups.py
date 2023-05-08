@@ -5,8 +5,8 @@ from django.conf import settings
 from django.core.exceptions import ImproperlyConfigured
 from django.db import models
 from django.utils.translation import gettext_lazy as _
-from wagtail.core.models import Page
-from wagtail.core.fields import RichTextField
+from wagtail.models import Page
+from wagtail.fields import RichTextField
 from wagtail.admin.edit_handlers import FieldPanel
 
 # ------------------------------------------------------------------------------
