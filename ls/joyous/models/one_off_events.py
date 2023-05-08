@@ -7,7 +7,7 @@ from django.db.models.query import ModelIterable
 from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 from wagtail.models import Page
-from wagtail.admin.edit_handlers import FieldPanel
+from wagtail.admin.panels import FieldPanel
 
 from ..utils.telltime import (todayUtc, getAwareDatetime, getLocalDatetime,
         getLocalDate, getLocalTime)

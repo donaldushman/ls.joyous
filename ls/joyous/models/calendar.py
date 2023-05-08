@@ -15,7 +15,7 @@ from django.utils import timezone
 from django.utils.translation import gettext_lazy as _
 from wagtail.models import Page, Site
 from wagtail.fields import RichTextField
-from wagtail.admin.edit_handlers import HelpPanel, FieldPanel, MultiFieldPanel
+from wagtail.admin.panels import HelpPanel, FieldPanel, MultiFieldPanel
 from wagtail.contrib.routable_page.models import RoutablePageMixin, route
 from wagtail.search import index
 from .. import __version__
