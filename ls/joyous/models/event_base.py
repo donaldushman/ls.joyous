@@ -19,8 +19,9 @@ try:
 except ImportError:
     from wagtail.core.query import PageQuerySet
 from wagtail.core.fields import RichTextField
-from wagtail.admin.edit_handlers import (FieldPanel,
-        PageChooserPanel, BaseCompositeEditHandler)
+from wagtail.admin.edit_handlers import (FieldPanel, 
+        PageChooserPanel)
+from wagtail.admin.panels import PanelGroup
 from wagtail.images import get_image_model_string
 from wagtail.search import index
 from wagtail.admin.forms import WagtailAdminPageForm
@@ -40,7 +41,7 @@ def _filterContentPanels(panels, remove):
     for panel in panels:
         if isinstance(panel, FieldPanel) and panel.field_name in remove:
             continue
-        elif isinstance(panel, BaseCompositeEditHandler):
+        elif isinstance(panel, PanelGroup):
             panel.children = _filterContentPanels(panel.children, remove)
         retval.append(panel)
     return retval
